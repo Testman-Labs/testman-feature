@@ -1,6 +1,6 @@
 import { Feature } from "@cucumber/messages";
 import { elements, open, parse } from "./actions";
-import { FeatureToJSON } from "./types";
+import { IFeatureToJSON } from "./types";
 
 export function FeatureToJSON(filePath: string) {
     filePath = open(filePath.replace(/['"]/g, ''));
@@ -18,5 +18,5 @@ export function FeatureToJSON(filePath: string) {
         elements: elements([...children]),
         fields: {}
     };
-    return feature as FeatureToJSON;
+    return feature as IFeatureToJSON;
 }

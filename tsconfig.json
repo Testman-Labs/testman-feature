@@ -24,7 +24,10 @@
   "exclude": [
     "node_modules",
     "**/node_modules/*",
+    "/*.js",
     "dist",
-    "/*.js"
+  ],
+  "include": [
+    "src"
   ]
 }

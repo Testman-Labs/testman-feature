@@ -1,19 +1,25 @@
 {
-	"name": "testman-feature",
-	"version": "1.0.0",
+	"name": "@testmanlabs/testman-feature",
+	"version": "1.0.6",
 	"description": "",
 	"keywords": [
 		"testman",
-		"feature"
+		"feature",
+		"testmanlabs"
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Testman-Labs/testman-feature"
+		"url": "git+https://github.com/Testman-Labs/testman-feature.git"
 	},
 	"author": {
 		"name": "Testman Labs"
 	},
 	"license": "MIT",
+	"publishConfig": {
+		"access": "public"
+	},
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
 	"scripts": {
 		"build": "tsc",
 		"start": "ts-node src/index.ts",
