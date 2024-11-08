@@ -1,6 +1,6 @@
 {
 	"name": "@testmanlabs/testman-feature",
-	"version": "1.0.6",
+	"version": "1.0.8",
 	"description": "",
 	"keywords": [
 		"testman",
@@ -20,6 +20,13 @@
 	},
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js",
+			"require": "./dist/index.js"
+		}
+	},
 	"scripts": {
 		"build": "tsc",
 		"start": "ts-node src/index.ts",
