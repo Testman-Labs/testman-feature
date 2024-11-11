@@ -1,12 +1,16 @@
 {
 	"name": "@testmanlabs/testman-feature",
-	"version": "1.0.9",
-	"description": "",
+	"version": "1.0.10",
+	"description": "A feature management library for Testman Labs",
 	"keywords": [
-		"testman",
-		"feature",
-		"testmanlabs"
-	],
+        "testmanlabs",
+        "testman-feature",
+        "qmetry",
+        "bdd",
+        "automation",
+        "test",
+        "cucumber"
+    ],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/Testman-Labs/testman-feature.git"
@@ -15,6 +19,7 @@
 		"name": "Testman Labs"
 	},
 	"license": "MIT",
+	"homepage": "https://github.com/Testman-Labs/testman-feature#readme",
 	"publishConfig": {
 		"access": "public"
 	},
@@ -28,13 +33,18 @@
 		}
 	},
 	"scripts": {
+		"@jest/globals": "^29.7.0",
+        "@types/jest": "^29.5.14",
 		"build": "tsc",
 		"start": "ts-node src/index.ts",
-		"dev": "tsc && node dist/index.js"
+		"dev": "tsc && node dist/index.js",
+		"test": "jest"
 	},
 	"devDependencies": {
 		"ts-node": "^10.9.2",
-		"typescript": "^5.6.3"
+		"typescript": "^5.6.3",
+		"jest": "^29.7.0",
+        "ts-jest": "^29.2.5"
 	},
 	"dependencies": {
 		"@cucumber/gherkin": "^30.0.0",

@@ -1,16 +1,15 @@
 #[estimated]=00:10:05 
 Feature: TEST-2208: (LOGIN) - Login con usuario y contraseña
     [description]=Es una descripcion
-    [precondition]=Es una precondition
+    [precondition]=Lorem ipsum precondition
     [status]=To Do
     [priority]=High
-    [assignee]=712020:de07066e-d0bd-46d7-add7-2847ec451521
+    [assignee]=818189:ed07188a-d0dd-46d9-adb7-2549rs452327
     [labels]=Manual,Regression,Smoke
     [story]=TEST-2208
-    [fix] = ULTRA-2024-Q2-Sprint01,SteelPulse-2024-Q2-Sprint01
-    [components] = API-NE-GESTIONENDOSOS,API-NE-VIAJEHOGAR
-    [sprint] = Board Pruebas DevSecOps/Board Sprint 1
-    [automatizable]=No->No aplica
+    [fix]=SQT-Sprint01,SQR-Sprint01
+    [components]=API-TEST1,API-TEST2
+    [sprint]=Board Pruebas/Board Sprint 1
     
     Scenario: Happy Path - Login NO ACTIVADO
         [folder] = /FolderTest

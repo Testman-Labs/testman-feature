@@ -1,9 +1,42 @@
 # Testman Feature
-Gets feature file data for test case processing with custom fields
 
-**Command Available:**
-1. FeatureToJSON(fielPath)
-2. IFieldMaps
-3. IFeatuteElement
-4. IFeatureScenario
-5. IFeatureToJSON
+A feature management library for Testman Labs. This library helps in processing feature files for test case management with custom fields.
+
+## Installation
+
+```sh
+npm install @testmanlabs/testman-feature
+```
+
+## Usage
+```ts
+import { FeatureToJSON, IFieldMaps, IFeatureElement, IFeatureScenario, IFeatureToJSON } from '@testmanlabs/testman-feature';
+
+// Example usage
+const featureData: IFeatureToJSON = FeatureToJSON('path/to/feature/file');
+console.log(featureData);
+```
+
+## API
+
+**Functions**
+
+***FeatureToJSON(filePath: string): IFeatureToJSON**
+Converts a feature file to a JSON object.
+
+- `filePath:` The path to the feature file.
+
+**Interfaces**
+
+`**IFieldMaps**` Represents a map of fields.
+
+`**IFeatureElement**` Represents a feature element.
+
+`**IFeatureScenario**` Represents a feature scenario.
+
+`**IFeatureToJSON**` Extends IFeatureScenario and includes an array of IFeatureElement.
+
+
+## License
+
+[MIT](/LICENSE.txt)
