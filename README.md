@@ -2,6 +2,12 @@
 
 A feature management library for Testman Labs. This library helps in processing feature files for test case management with custom fields.
 
+[![Build App](https://github.com/Testman-Labs/testman-feature/actions/workflows/build.yml/badge.svg)](https://github.com/Testman-Labs/testman-feature/actions/workflows/build.yml)
+
+[![Test App](https://github.com/Testman-Labs/testman-feature/actions/workflows/test.yml/badge.svg)](https://github.com/Testman-Labs/testman-feature/actions/workflows/test.yml)
+
+
+
 ## Installation
 
 ```sh
